@@ -1,0 +1,49 @@
+<!--
+
+{% extends "base.html" %}
+{% block content %}
+
+<div class="center-box text-center">
+<h3>🔐 Secure Login</h3>
+
+<form action="/login" method="post">
+<input class="form-control mb-3" name="username" placeholder="Username">
+<input class="form-control mb-3" type="password" name="password" placeholder="Password">
+<button class="btn btn-primary w-100">Login</button>
+</form>
+
+</div>
+
+{% endblock %}
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+
+<h2>Login</h2>
+
+<form method="POST" action="/login">
+    <input type="text" name="username" placeholder="Username" required><br><br>
+    <input type="password" name="password" placeholder="Password" required><br><br>
+    <button type="submit">Login</button>
+</form>
+
+<!-- ✅ FLASH POPUP FIXED -->
+<script>
+window.onload = function() {
+    var messages = JSON.parse('{{ get_flashed_messages() | tojson | safe }}');
+    
+    if (messages.length > 0) {
+        messages.forEach(function(msg) {
+            alert(msg);
+        });
+    }
+};
+</script>
+
+</body>
+</html>
