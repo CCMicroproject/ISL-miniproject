@@ -1,12 +1,35 @@
+<!-- dashboard.html -->
 {% extends "base.html" %}
 {% block content %}
 
-<h2>Welcome 🚀</h2>
+<div class="text-center mb-5">
+<h1 class="fw-bold">Welcome to My Secure Portfolio 🚀</h1>
+<p class="text-light">Cybersecurity Engineer | MFA Expert | Cloud Architect</p>
+</div>
 
-<div class="row">
-<div class="col-md-4"><div class="card">Projects Section</div></div>
-<div class="col-md-4"><div class="card">MFA Security Enabled</div></div>
-<div class="col-md-4"><div class="card">Contact Info</div></div>
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card text-center">
+<h3>🔐 Security Systems</h3>
+<p>Implemented MFA authentication, secure session handling, OTP verification, password hashing and zero-trust architecture.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card text-center">
+<h3>☁ Cloud Projects</h3>
+<p>Worked on AWS, Azure and private cloud infrastructure with Docker, Kubernetes and Terraform automation.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card text-center">
+<h3>📞 Connect</h3>
+<p>Available for freelance cybersecurity audits, web development and enterprise security consultation.</p>
+</div>
+</div>
+
 </div>
 
 {% endblock %}

@@ -1,16 +1,16 @@
-
-
+<!-- otp.html -->
 {% extends "base.html" %}
 {% block content %}
 
 <div class="center-box text-center">
-<h3>Enter OTP</h3>
+<h2 class="mb-4">📲 OTP Verification</h2>
 
 <form action="/verify" method="post">
-<input class="form-control mb-3" name="otp" placeholder="OTP">
-<button class="btn btn-primary w-100">Verify</button>
+<input class="form-control mb-3" name="otp" placeholder="Enter 6-digit OTP">
+<button class="btn btn-primary w-100">Verify OTP</button>
 </form>
 
+<p class="mt-3 text-secondary">Your account is protected.</p>
 </div>
 
 {% endblock %}

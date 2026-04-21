@@ -1,5 +1,35 @@
+<!-- home.html -->
 {% extends "base.html" %}
 {% block content %}
-<h2>Home</h2>
-<p>Secure Portfolio Homepage</p>
+
+<div class="text-center">
+<h1 class="section-title text-center">Home</h1>
+<p class="lead text-center">Welcome to a modern secure digital portfolio designed with Flask, Bootstrap and advanced authentication.</p>
+</div>
+
+<div class="row mt-5 g-4">
+<div class="col-md-6">
+<div class="card">
+<h4 class="text-center" >Why This Portfolio?</h4>
+<p class="text-center" >
+This website demonstrates secure login systems, OTP verification,
+responsive UI design, cloud deployment and enterprise-level security architecture.
+</p>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="card">
+<h4 class="text-center" >Technologies Used</h4>
+<ul>
+<li class="text-center" >Flask Framework</li>
+<li class="text-center" >Bootstrap 5</li>
+<li class="text-center" >Python Backend</li>
+<li class="text-center" >MFA Security</li>
+<li class="text-center" >SQLite / MySQL</li>
+</ul>
+</div>
+</div>
+</div>
+
 {% endblock %}
